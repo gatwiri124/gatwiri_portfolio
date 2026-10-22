@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="iris" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0%" stop-color="#F5B26B"/>
+      <stop offset="55%" stop-color="#B4763B"/>
+      <stop offset="100%" stop-color="#5B2F0F"/>
+    </radialGradient>
+    <radialGradient id="bgglow" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Backdrop -->
+  <circle cx="100" cy="100" r="96" fill="url(#bgglow)"/>
+
+  <!-- Decorative code chevrons -->
+  <g stroke="#93C5FD" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M24 20 L15 30 L24 40"/>
+    <path d="M176 20 L185 30 L176 40"/>
+    <path d="M14 150 L6 160 L14 170"/>
+    <path d="M186 150 L194 160 L186 170"/>
+  </g>
+
+  <!-- Afro hair mass behind the head -->
+  <circle cx="100" cy="48" r="50" fill="#1A1A1A"/>
+  <ellipse cx="56" cy="86" rx="14" ry="22" fill="#1A1A1A"/>
+  <ellipse cx="144" cy="86" rx="14" ry="22" fill="#1A1A1A"/>
+
+  <!-- Hooded shoulders -->
+  <path d="M22 200 L22 172 Q22 152 52 146 L82 140 Q92 158 100 158 Q108 158 118 140 L148 146 Q178 152 178 172 L178 200 Z" fill="#2563EB"/>
+  <!-- Hood shadow behind the neck -->
+  <ellipse cx="100" cy="146" rx="34" ry="13" fill="#1D4ED8"/>
+
+  <!-- Neck -->
+  <rect x="90" y="124" width="20" height="36" rx="9" fill="#8A4E28"/>
+  <ellipse cx="100" cy="128" rx="10" ry="5" fill="#6F3D1E"/>
+
+  <!-- Head -->
+  <ellipse cx="100" cy="96" rx="44" ry="46" fill="#9A5D34" stroke="#4A2A14" stroke-width="1.2"/>
+  <!-- Soft side shading -->
+  <ellipse cx="121" cy="100" rx="24" ry="42" fill="#000000" opacity="0.06"/>
+
+  <!-- Spiky anime fringe -->
+  <path d="M56 68 Q100 22 144 68 Q137 82 130 71 Q122 84 113 73 Q106 88 96 75 Q88 87 80 75 Q71 85 63 72 Q58 74 56 68 Z" fill="#1A1A1A"/>
+  <path d="M56 68 Q70 60 82 60 Q62 66 58 76 Z" fill="#1A1A1A"/>
+  <path d="M144 68 Q130 60 118 60 Q138 66 142 76 Z" fill="#1A1A1A"/>
+
+  <!-- Afro puffs with blue hair ties -->
+  <circle cx="52" cy="50" r="27" fill="#141414"/>
+  <circle cx="148" cy="50" r="27" fill="#141414"/>
+  <path d="M40 72 Q52 80 66 73 L65 79 Q52 86 41 79 Z" fill="#2563EB"/>
+  <path d="M134 73 Q148 80 160 72 L159 79 Q148 86 135 79 Z" fill="#2563EB"/>
+
+  <!-- Headphones -->
+  <path d="M43 88 Q100 14 157 88" fill="none" stroke="#1D4ED8" stroke-width="6" stroke-linecap="round"/>
+  <rect x="30" y="82" width="19" height="26" rx="8" fill="#2563EB"/>
+  <rect x="34" y="86" width="11" height="18" rx="5" fill="#BFDBFE"/>
+  <rect x="151" y="82" width="19" height="26" rx="8" fill="#2563EB"/>
+  <rect x="155" y="86" width="11" height="18" rx="5" fill="#BFDBFE"/>
+
+  <!-- Eyebrows -->
+  <path d="M70 83 Q80 78 90 83" fill="none" stroke="#221108" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 83 Q120 78 130 83" fill="none" stroke="#221108" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <g>
+    <ellipse cx="80" cy="99" rx="9.5" ry="11.5" fill="#FFFFFF"/>
+    <circle cx="80" cy="100" r="7" fill="url(#iris)"/>
+    <circle cx="80" cy="100" r="2.8" fill="#170C05"/>
+    <circle cx="77.6" cy="96.6" r="2.4" fill="#FFFFFF"/>
+    <circle cx="83" cy="103" r="1.1" fill="#FFFFFF" opacity="0.85"/>
+    <path d="M70 91 Q80 84 90 91" fill="none" stroke="#170C05" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+  <g>
+    <ellipse cx="120" cy="99" rx="9.5" ry="11.5" fill="#FFFFFF"/>
+    <circle cx="120" cy="100" r="7" fill="url(#iris)"/>
+    <circle cx="120" cy="100" r="2.8" fill="#170C05"/>
+    <circle cx="117.6" cy="96.6" r="2.4" fill="#FFFFFF"/>
+    <circle cx="123" cy="103" r="1.1" fill="#FFFFFF" opacity="0.85"/>
+    <path d="M110 91 Q120 84 130 91" fill="none" stroke="#170C05" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Blush -->
+  <ellipse cx="68" cy="112" rx="7" ry="4" fill="#E97676" opacity="0.35"/>
+  <ellipse cx="132" cy="112" rx="7" ry="4" fill="#E97676" opacity="0.35"/>
+
+  <!-- Nose and smile -->
+  <path d="M100 104 Q97.5 108 100 109.5" fill="none" stroke="#5C3318" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M90 116 Q100 125 110 116" fill="none" stroke="#3F2410" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Hoodie details: drawstrings and code badge -->
+  <path d="M92 161 L91 174" stroke="#E5E7EB" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="91" cy="176" r="1.6" fill="#E5E7EB"/>
+  <path d="M108 161 L109 174" stroke="#E5E7EB" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="109" cy="176" r="1.6" fill="#E5E7EB"/>
+  <rect x="86" y="183" width="28" height="14" rx="4" fill="#F9FAFB"/>
+  <g stroke="#2563EB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M94 187 L90.5 190 L94 193"/>
+    <path d="M106 187 L109.5 190 L106 193"/>
+    <path d="M100.8 186 L99.2 194"/>
+  </g>
+</svg>

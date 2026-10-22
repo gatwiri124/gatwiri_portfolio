@@ -15,7 +15,7 @@ class FooterSection extends StatelessWidget {
         ),
       ),
       child: Text(
-        '\u00a9 2026 Winfred Gatwiri. Built with Flutter.',
+        '© 2026 Winfred Gatwiri. Built with Flutter',
         textAlign: TextAlign.center,
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
           color: AppTheme.secondary.withAlpha(130),

@@ -1,11 +1,11 @@
 {
-    "name": "gatwiri_portfolio",
-    "short_name": "gatwiri_portfolio",
+    "name": "Winfred Gatwiri | Mobile & Flutter Application Developer",
+    "short_name": "Winfred Gatwiri",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FFFFFF",
+    "theme_color": "#2563EB",
+    "description": "Portfolio of Winfred Gatwiri, a Mobile & Flutter Application Developer based in Laikipia, Kenya.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -60,14 +60,14 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          'Flutter Developer & UI Designer',
+          'Mobile & Flutter Application Developer',
           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
             color: AppTheme.primary,
           ),
         ),
         const SizedBox(height: 16),
         Text(
-          'I build clean mobile applications, responsive web experiences, and user-focused digital products.',
+          'I design and build clean, high-performance mobile applications with Flutter, turning real-world problems into polished, user-focused digital products.',
           style: Theme.of(context).textTheme.bodyLarge?.copyWith(
             color: AppTheme.secondary.withAlpha(180),
             height: 1.6,
@@ -101,25 +101,41 @@ class HeroSection extends StatelessWidget {
     );
   }
 
+  /// The "Woman in STEM" GIF with its yellow marketing backdrop recalculated
+  /// to the theme's primary blue. A color matrix was solved from the GIF's
+  /// own palette: it maps the yellow (FFC300 family) to #2563EB and pins the
+  /// sticker's pink, dark-brown and orange colors in place, so the animation
+  /// plays exactly like the original asset.
+  static const List<double> _gifRecolorMatrix = <double>[
+    1.234940458, -1.421335386, 1.046627109, 0, 0,
+    0.105615435, 0.361051065, 0.470502095, 0, 0,
+    -0.251106086, 1.519133692, -0.118642736, 0, 0,
+    0, 0, 0, 1, 0,
+  ];
+
   Widget _buildImage() {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16),
-      child: Image.network(
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-        width: 300,
-        height: 300,
-        fit: BoxFit.cover,
-        errorBuilder: (context, error, stackTrace) {
-          return Container(
-            width: 300,
-            height: 300,
-            decoration: BoxDecoration(
-              color: AppTheme.surface,
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: Icon(Icons.person, size: 80, color: Colors.grey[400]),
-          );
-        },
+      child: ColorFiltered(
+        colorFilter: ColorFilter.matrix(_gifRecolorMatrix),
+        child: Image.network(
+          'https://media.giphy.com/media/tkEaYA3Kd5WtyXtLqu/giphy.gif',
+          width: 300,
+          height: 300,
+          fit: BoxFit.cover,
+          gaplessPlayback: true,
+          errorBuilder: (context, error, stackTrace) {
+            return Container(
+              width: 300,
+              height: 300,
+              decoration: BoxDecoration(
+                color: AppTheme.surface,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Icon(Icons.person, size: 80, color: Colors.grey[400]),
+            );
+          },
+        ),
       ),
     );
   }

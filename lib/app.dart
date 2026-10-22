@@ -15,7 +15,7 @@ class PortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Winfred Gatwiri \u2014 Flutter Developer & UI Designer',
+      title: 'Winfred Gatwiri \u2014 Mobile & Flutter Application Developer',
       theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
       home: const PortfolioPage(),
@@ -101,7 +101,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
             NavBar(onSectionTap: _scrollToSection),
             Center(
               child: Container(
-                constraints: const BoxConstraints(maxWidth: 1000),
+                constraints: const BoxConstraints(maxWidth: 1200),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -115,7 +115,9 @@ class _PortfolioPageState extends State<PortfolioPage> {
                     _sectionWrapper(
                       key: _aboutKey,
                       title: 'About',
-                      child: const AboutSection(),
+                      child: AboutSection(
+                        onAppSelected: (_) => _scrollToSection('projects'),
+                      ),
                     ),
                     _sectionWrapper(
                       key: _skillsKey,
@@ -124,7 +126,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
                     ),
                     _sectionWrapper(
                       key: _projectsKey,
-                      title: 'Projects',
+                      title: 'Featured Mobile Projects',
                       child: const ProjectsSection(),
                     ),
                     _sectionWrapper(
