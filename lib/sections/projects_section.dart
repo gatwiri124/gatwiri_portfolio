@@ -16,8 +16,6 @@ class ProjectsSection extends StatelessWidget {
       techStack: const ['Flutter', 'Dart', 'Web Tech'],
       screenshotAsset: 'Assets/images/Screen15.png',
       logoAsset: 'Assets/images/logo4.png',
-      liveUrl: 'https://gatwiri124.github.io/grocery_market_web/',
-      liveLabel: 'Grocery Market Web',
       // Served from web/apks/freshgrocees.apk, which flutter build web copies
       // to the site root next to the other static files.
       apkAsset: 'apks/freshgrocees.apk',

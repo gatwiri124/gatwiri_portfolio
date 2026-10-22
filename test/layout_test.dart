@@ -158,7 +158,9 @@ void main() {
 
     expect(find.text('Online Grocery Delivery App'), findsOneWidget);
     expect(find.text('Pending Play Store Approval'), findsOneWidget);
-    expect(find.text('Grocery Market Web'), findsOneWidget);
+    // The site link is shared by the developer directly instead.
+    expect(find.text('Grocery Market Web'), findsNothing);
+    expect(find.text('View Live'), findsNothing);
     // Every project card now offers its release APK download.
     expect(find.text('Download APK'), findsNWidgets(5));
     expect(
